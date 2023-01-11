@@ -29,7 +29,7 @@ const requestHandler =  (req, res) => {
         req.on('end', () => {
             const parseBody = Buffer.concat(body).toString();
             const user = parseBody.split('=')[1];
-            fs.writeFile('user-created', user, err =>{
+            fs.writeFile('user-created.txt', user, err =>{
                 res.statusCode = 302;
                 res.setHeader('Location', '/');
                 res.end();

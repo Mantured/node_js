@@ -1,0 +1,9 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header nav.navbar div a.navbar-brand,
+header nav.navbar div button.navbar-toggler,
+header nav.navbar div div.collapse ul.navbar-nav li.nav-item a.nav-link{
+    color: whitesmoke;
+}
