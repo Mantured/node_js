@@ -4,7 +4,12 @@ const path = require('path');
 const bodyParser = require('body-parser');
 
 const express = require('express');
+
 const app = express();
+
+app.set('view engine', 'pug');
+app.set('views', 'views');
+
 const adminData = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
 

@@ -1,9 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: 'Poppins', sans-serif;
 }
 
-header nav.navbar div a.navbar-brand,
-header nav.navbar div button.navbar-toggler,
-header nav.navbar div div.collapse ul.navbar-nav li.nav-item a.nav-link{
+.container_header{
+    height: 10vh;
+    background-color: rgb(20, 71, 62);
+}
+
+.header_left_side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container_main{
+    height: 90vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_row{
     color: whitesmoke;
+
+}
+.main_row h1{
+    color: whitesmoke;
+    padding: 1rem;
+    border: 1px solid rgb(20, 71, 62);
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+.main_row p{
+    color: whitesmoke;
+    padding: 1rem;
+
+}
+
+button{
+    border: 2px solid;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 21px;
+    background-color: #fff;
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+button:hover{
+    background-color: yellowgreen;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul { 
+    color: #0E6FC9; 
+}
+ul li::marker{
+    color: #D2228C;
 }
